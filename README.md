@@ -1,26 +1,26 @@
-## java8Ñ§Ï°
-> Õâ¸öÏîÄ¿ÊÇÎÒÔÄ¶ÁÁË¡¶java8ÊµÕ½¡·Õâ±¾Êé£¬¸ù¾İÊé¼®Ìá¹©µÄÔ´Âë×öÁËÒ»Ğ©ĞŞ¸Ä×¢ÊÍ,ÓÃÓÚÒÔºó²éÔÄ¸´Ï°Ê¹ÓÃ  
-> java8µÄĞÂÌØĞÔÖ÷Òª°üº¬ÁËlambda±í´ïÊ½µÄÒıÈë,ĞÂµÄ½Ó¿Ú¶¨Òå(½Ó¿ÚµÄÄ¬ÈÏ·½·¨),ĞÂµÄÈÕÆÚÊ±¼äAPI  
-> ³ÌĞòÔËĞĞ»·¾³Îªjava9
+## java8å­¦ä¹ 
+> è¿™ä¸ªé¡¹ç›®æ˜¯æˆ‘é˜…è¯»äº†ã€Šjava8å®æˆ˜ã€‹è¿™æœ¬ä¹¦ï¼Œæ ¹æ®ä¹¦ç±æä¾›çš„æºç åšäº†ä¸€äº›ä¿®æ”¹æ³¨é‡Š,ç”¨äºä»¥åæŸ¥é˜…å¤ä¹ ä½¿ç”¨  
+> java8çš„æ–°ç‰¹æ€§ä¸»è¦åŒ…å«äº†lambdaè¡¨è¾¾å¼çš„å¼•å…¥,æ–°çš„æ¥å£å®šä¹‰(æ¥å£çš„é»˜è®¤æ–¹æ³•),æ–°çš„æ—¥æœŸæ—¶é—´API  
+> ç¨‹åºè¿è¡Œç¯å¢ƒä¸ºjava9
 
-### Ä¿Â¼½á¹¹
+### ç›®å½•ç»“æ„
 #### lambda
-###### com.sn.lambda.basics(»ù±¾Ê¹ÓÃ)
-* Á÷µÄ¹¹½¨Óë±éÀú BuildingStreams.java
-* É¸Ñ¡ÓëÇĞÆ¬ Filtering.java
-* Ó³Éä Mapping.java
-* ²éÕÒºÍÆ¥Åä Finding.java
-* ¹éÔ¼ NumericStreams.java Reducing.java
-* ÅÅĞò Sorting
-* Ê¾Àı/Ó¦ÓÃ PuttingIntoPractice.java
-######  com.sun.lambda.collector(ÓÃÁ÷ÊÕ¼¯Êı¾İ)
-* ¹æÔ¼Óë»ã×Ü Reducing.java Summarizing.java
-* ·Ö×é Grouping.java
-* ·ÖÇø Partitioning.java
-###### com.sun.lambda.parallel.ParallelStreams(²¢ĞĞÁ÷)
-###### com.sun.lambda.optional(´¦Àínull)
-#### ĞÂµÄÈÕÆÚÊ±¼äAPI
+###### com.sn.lambda.basics(åŸºæœ¬ä½¿ç”¨)
+* æµçš„æ„å»ºä¸éå† BuildingStreams.java
+* ç­›é€‰ä¸åˆ‡ç‰‡ Filtering.java
+* æ˜ å°„ Mapping.java
+* æŸ¥æ‰¾å’ŒåŒ¹é… Finding.java
+* å½’çº¦ NumericStreams.java Reducing.java
+* æ’åº Sorting
+* ç¤ºä¾‹/åº”ç”¨ PuttingIntoPractice.java
+######  com.sun.lambda.collector(ç”¨æµæ”¶é›†æ•°æ®)
+* è§„çº¦ä¸æ±‡æ€» Reducing.java Summarizing.java
+* åˆ†ç»„ Grouping.java
+* åˆ†åŒº Partitioning.java
+###### com.sun.lambda.parallel.ParallelStreams(å¹¶è¡Œæµ)
+###### com.sun.lambda.optional(å¤„ç†null)
+#### æ–°çš„æ—¥æœŸæ—¶é—´API
 1. com.sun.DateTime
-* ĞÂµÄÊ±¼ä¶ÔÏó DateTimeing.useLocalDate
-* Ê±¼ä´¦Àí½Ó¿ÚTemporalAdjuster DateTimeing.useTemporalAdjuster
-* Ê±¼ä¸ñÊ½»¯ DateTimeing.useDateFormatter
+* æ–°çš„æ—¶é—´å¯¹è±¡ DateTimeing.useLocalDate
+* æ—¶é—´å¤„ç†æ¥å£TemporalAdjuster DateTimeing.useTemporalAdjuster
+* æ—¶é—´æ ¼å¼åŒ– DateTimeing.useDateFormatter
