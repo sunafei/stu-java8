@@ -3,10 +3,8 @@ package com.sun.lambda.collector;
 import com.sun.lambda.collector.base.Dish;
 import org.junit.Test;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 import static com.sun.lambda.collector.base.Dish.dishTags;
@@ -141,6 +139,16 @@ public class Grouping {
                             return getCaloricLevel(dish);
                         },
                         toSet())));
+        System.out.println(map);
+    }
+
+    /**
+     * 按照某个属性分组并且保留原来list的顺序
+     */
+    @Test
+    public void test12() {
+        Map<Integer, List<Dish>> map = menu.stream()
+                .collect(Collectors.groupingBy(Dish::getCalories, TreeMap::new,Collectors.toList()));
         System.out.println(map);
     }
 }
