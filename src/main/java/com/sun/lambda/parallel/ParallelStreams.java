@@ -6,7 +6,7 @@ import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 /**
- * ²¢ĞĞÁ÷
+ * å¹¶è¡Œæµ
  */
 public class ParallelStreams {
     long N = 10_000L;

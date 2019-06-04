@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
@@ -106,5 +107,13 @@ public class Mapping {
                         .filter(pair -> (pair[0] + pair[1]) % 3 == 0)
                         .collect(toList());
         pairs.forEach(pair -> System.out.println("(" + pair[0] + ", " + pair[1] + ")"));
+    }
+
+    /**
+     * 读取对象的某个属性并拼接字符串
+     */
+    @Test
+    public void test6() {
+        System.out.println(menu.stream().map(Dish::getName).collect(Collectors.joining(",")));
     }
 }
