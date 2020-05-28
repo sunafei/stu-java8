@@ -66,6 +66,9 @@ public class Sorting {
         inventory.stream().sorted(comparing(Apple::getWeight)).forEach(System.out::println);
     }
 
+    /**
+     * 按照某个属性排序后 再按照另一个属性排序
+     */
     @Test
     public void test6() {
         inventory.stream().sorted(comparing(Apple::getWeight).thenComparing(Apple::getColor)).forEach(System.out::println);
@@ -103,6 +106,4 @@ public class Sorting {
                     '}';
         }
     }
-
-
 }

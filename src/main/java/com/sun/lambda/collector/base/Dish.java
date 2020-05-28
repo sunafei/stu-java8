@@ -1,11 +1,14 @@
 package com.sun.lambda.collector.base;
 
+import lombok.ToString;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import static java.util.Arrays.asList;
 
+@ToString
 public class Dish {
 
     private final String name;
@@ -37,13 +40,6 @@ public class Dish {
     }
 
     public enum Type { MEAT, FISH, OTHER }
-
-
-
-    @Override
-    public String toString() {
-        return name;
-    }
 
     public static final List<Dish> menu =
             asList( new Dish("pork", false, 800, Dish.Type.MEAT),

@@ -8,7 +8,7 @@ import java.util.Optional;
 /**
  * 缺省值
  */
-public class optionaling {
+public class Optionaling {
 
     /**
      * 尝试访问emptyOpt变量的值会导致 NoSuchElementException

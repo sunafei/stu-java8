@@ -14,6 +14,10 @@ import static com.sun.lambda.collector.base.Dish.menu;
  * 规约与汇总
  */
 public class Summarizing {
+
+    /**
+     * 集合长度
+     */
     @Test
     public void test1() {
         System.out.println(menu.size());
@@ -21,25 +25,38 @@ public class Summarizing {
         System.out.println(count);
     }
 
+    /**
+     * 比较获取对象
+     */
     @Test
     public void test2() {
         Dish dish = menu.stream().collect(reducing((d1, d2) -> d1.getCalories() > d2.getCalories() ? d1 : d2)).get();
         System.out.println(dish);
     }
 
+    /**
+     * 比较获取对象
+     */
     @Test
     public void test3() {
         Comparator<Dish> dishCaloriesComparator = Comparator.comparingInt(Dish::getCalories);
         BinaryOperator<Dish> moreCaloricOf = BinaryOperator.maxBy(dishCaloriesComparator);
         Dish dish = menu.stream().collect(reducing(moreCaloricOf)).get();
+        System.out.println(dish);
     }
 
+    /**
+     * 求和
+     */
     @Test
     public void test4() {
         int sum = menu.stream().collect(summingInt(Dish::getCalories));
         System.out.println(sum);
     }
 
+    /**
+     * 平均值
+     */
     @Test
     public void test5() {
         Double avg = menu.stream().collect(averagingInt(Dish::getCalories));
@@ -57,7 +74,7 @@ public class Summarizing {
     }
 
     /**
-     * 合并获取的值
+     * 合并获取的值 空格分割
      */
     @Test
     public void test7() {
@@ -65,6 +82,9 @@ public class Summarizing {
         System.out.println(_string);
     }
 
+    /**
+     * 合并获取的值 逗号合并
+     */
     @Test
     public void test8() {
         String _string = menu.stream().map(Dish::getName).collect(joining(", "));

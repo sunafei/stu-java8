@@ -38,22 +38,22 @@ public class Grouping {
     /**
      * jdk1.9支持
      */
-    @Test
-    public void test10() {
-        Map<Dish.Type, Set<String>> map = menu.stream().collect(groupingBy(Dish::getType, flatMapping(dish -> dishTags.get(dish.getName()).stream(), toSet())));
-        System.out.println(map);
-    }
+//    @Test
+//    public void test10() {
+//        Map<Dish.Type, Set<String>> map = menu.stream().collect(groupingBy(Dish::getType, flatMapping(dish -> dishTags.get(dish.getName()).stream(), toSet())));
+//        System.out.println(map);
+//    }
 
     /**
      * jdk1.9支持
      */
-    @Test
-    public void test11() {
-        Map<Dish.Type, List<Dish>> collect = menu.stream().filter(dish -> dish.getCalories() > 500).collect(groupingBy(Dish::getType));
-        System.out.println(collect);
-        Map<Dish.Type, List<Dish>> collect1 = menu.stream().collect(groupingBy(Dish::getType, filtering(dish -> dish.getCalories() > 500, toList())));
-        System.out.println(collect1);
-    }
+//    @Test
+//    public void test11() {
+//        Map<Dish.Type, List<Dish>> collect = menu.stream().filter(dish -> dish.getCalories() > 500).collect(groupingBy(Dish::getType));
+//        System.out.println(collect);
+//        Map<Dish.Type, List<Dish>> collect1 = menu.stream().collect(groupingBy(Dish::getType, filtering(dish -> dish.getCalories() > 500, toList())));
+//        System.out.println(collect1);
+//    }
 
     /**
      * 组装key的值

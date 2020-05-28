@@ -12,14 +12,15 @@
 * 示例/应用 [PuttingIntoPractice.java](./src/main/java/com/sun/lambda/basics/PuttingIntoPractice.java)
 ##### collector(用流收集数据)
 * 规约与汇总 [Reducing.java](./src/main/java/com/sun/lambda/collector/Reducing.java)  [Summarizing.java](./src/main/java/com/sun/lambda/collector/Summarizing.java)
-* 分组 Grouping.java
-* 分区 Partitioning.java
+* 分组 [Grouping.java](./src/main/java/com/sun/lambda/collector/Grouping.java)
+* 分区 [Partitioning.java](./src/main/java/com/sun/lambda/collector/Partitioning.java)
 ##### ParallelStreams(并行流)
+* 并行流演示 [ParallelStreams.java](./src/main/java/com/sun/lambda/parallel/ParallelStreams.java)
 ##### optional(处理null)
-
+* 处理null [optionaling.java](./src/main/java/com/sun/lambda/optional/Optionaling.java)
 
 #### 新的日期时间API
-1. com.sun.DateTime
+[示例代码](./src/main/java/com/sun/DateTime/DateTimeing.java)
 * 新的时间对象 DateTimeing.useLocalDate
-* 时间处理接口TemporalAdjuster DateTimeing.useTemporalAdjuster
+* 时间处理接口 DateTimeing.useTemporalAdjuster
 * 时间格式化 DateTimeing.useDateFormatter

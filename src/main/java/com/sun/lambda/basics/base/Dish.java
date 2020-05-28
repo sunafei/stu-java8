@@ -1,8 +1,8 @@
 package com.sun.lambda.basics.base;
 
-import java.util.Arrays;
-import java.util.List;
+import lombok.ToString;
 
+@ToString
 public class Dish {
 
     private final String name;
@@ -34,11 +34,5 @@ public class Dish {
     }
 
     public enum Type { MEAT, FISH, OTHER }
-
-    @Override
-    public String toString() {
-        return name;
-    }
-
 
 }

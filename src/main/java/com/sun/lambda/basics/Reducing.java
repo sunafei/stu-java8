@@ -48,16 +48,22 @@ public class Reducing {
         System.out.println(sum2);
     }
 
+    /**
+     * 比较大小
+     */
     @Test
     public void test3() {
         List<Integer> numbers = Arrays.asList(3, 4, 5, 1, 2);
-        int max = numbers.stream().reduce(0, (a, b) -> Integer.max(a, b));
+        int max = numbers.stream().reduce(0, (a, b) -> Integer.min(a, b));
         System.out.println(max);
 
         int max2 = numbers.stream().reduce(8, (a, b) -> Integer.max(a, b));
         System.out.println(max2);
     }
 
+    /**
+     * 取最小值
+     */
     @Test
     public void test4() {
         List<Integer> numbers = Arrays.asList(3, 4, 5, 1, 2);
@@ -65,6 +71,9 @@ public class Reducing {
         min.ifPresent(System.out::println);
     }
 
+    /**
+     * 求和
+     */
     @Test
     public void test5() {
         int calories = menu.stream()
